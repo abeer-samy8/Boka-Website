@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main1.css">
+        <link rel="stylesheet" href="css/boka.css">
+        <link rel="stylesheet" href="css/bootstrap-timepicker.min.css">
+
+        <link rel="stylesheet" href="css/tpicker.css">
+
+        <!-- <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">   -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <title>Boka</title>
+    </head>
+    <body>
+
+<!-- ============Start Navbar============= -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+             <div style=" margin-left: 30px; ">
+              <a class="navbar-brand" href="#"><i><img src="img/instgram.png" alt="instgram"> </i></i></a>
+              <a class="navbar-brand" href="#"><i><img src="img/youtube.png" alt="youtube"></i></a>
+              <a class="navbar-brand" href="#"><i><img src="img/facebook.png" alt="facebook"></i></a>
+              <a class="navbar-brand" href="#"><i><img src="img/phone.png" alt="phone"></i></a>
+              <a class="navbar-brand" href="#"><i><img src="img/number.png" alt="number"></i></a>
+            </div>
+
+              <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+
+                <span class=" navbar navbar-toggler-icon"></span>
+              </button>
+
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+                <ul class="navbar-nav ms-auto  mb-2  mb-lg-0" style=" margin-right: 30px;  " >
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">For Business</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link"  style="color:#17505C;">|</a></li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" >Help</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link"  style="color:#17505C; ">|</a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      EN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">EN</a></li>
+                      <li><a class="dropdown-item" href="#">ES</a></li>
+                      <li><a class="dropdown-item" href="#">FR</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+
+
+            </div>
+          </nav>
+ <!-- ============End Navbar============= -->
+
+  <!-- ============Start Logo Navbar============= -->
+  <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 logo-nav">
+    <div class="container-fluid">
+        <div style=" margin-left: 30px; ">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" />
+              </a>
+          </div>
+
+          <div class="d-flex ms-auto mb-2  mb-lg-0 " id="navbarSupportedContent" >
+            <a class="btn main-btn" href="#">Sign Up</a>
+            <a class="btn min-btn" href="#">Login</a>
+    </div>
+  </nav>
+  <!-- ============End Logo Navbar============= -->
+
+<!-- =========Start Hero========-->
+<div class="position-relative overflow-hidden  text-center bg-light hero"
+ style=" background-image: url('img/header.png');">
+
+
+ <div class="row align-items-center justify-content-center">
+    <div class="col-lg-12 col-md-5 p-lg-5 mx-auto my-5">
+        <h4 class="lead fw-normal">Your style booking specialist</h4>
+        <h1 class="">Clothes mean nothing until
+        <span class="d-block">someone lives in them.</span> </h1>
+
+
+        <!-- Start Srearch Area  -->
+        <div class="container searchBar ">
+            <div class="row align-items-center justify-content-center">
+              <div class=" col-md-6" >
+
+              <div class="filter-container">
+                <div class="row">
+                  <div class="col ">
+                    <div class="text-center pt-1" style="padding-left: 10px;">
+                    <div class="form-check">
+                      <input class="form-check-input  check-in" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label check-txt" for="flexCheckDefault">
+                        At Home
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input check-in" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label check-txt" for="flexCheckChecked">
+                       Business
+                      </label>
+                    </div>
+                  </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div style="display: table;">
+                      <div style="display: table-row; width:100%;">
+                          <div style="display: table-cell;">
+                            <i class="fa-solid fa-calendar-days" style="color: #02323D;"></i>
+                                </div>
+                          <div class="" style="display: table-cell; width:100%; padding-left: 6px;">
+                            <input class="datepicker placeholdertxt" style="width: 80px; " id="depart" type="text" placeholder="Today" />
+                          </div>
+                      </div>
+                      </div>
+
+                  </div>
+                  <div class="col">
+                    <div style="display: table;">
+                      <div style="display: table-row; width:100%;">
+                          <div style="display: table-cell;">
+                            <i class="fa-regular fa-clock" style="color: #02323D;"></i>
+                          </div>
+                          <div style="display: table-cell; width:100%; padding-left: 6px;">
+                            <input class="timepicker placeholdertxt" style="width: 60px;" id='timepicker' type="text" placeholder="Now" />
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                    <div style="display: table;">
+                      <div style="display: table-row; width:100%;">
+                          <div style="display: table-cell;">
+                            <i class="fa-solid fa-location-dot" style="color: #02323D;"></i>
+                          </div>
+                          <div style="display: table-cell; width:100%; padding-left: 6px;">
+                            <input class=" placeholdertxt" style="width: 120px; border-radius: 8px; " id="depart" type="text" placeholder="Los Angeles" />
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-md-6" >
+              <form class="d-flex" role="search"  >
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btntxt" type="button">Search</button>
+              </form>
+            </div>
+          </div>
+          </div>
+        <!-- End Search Area -->
+    </div>
+
+  <!-- <div class="row"> -->
+    <!-- <div class="col"> -->
+      <p class="p" style="margin-top: 5px;">It looks like you're in Dhaka Division. Not correct?</p>
+    <!-- </div> -->
+  <!-- </div> -->
+
+</div>
+
+</div>
+<!-- =========End Hero========-->
+
+<!--========== Strat Services Area =============-->
+
+<div class="services">
+    <div class="container swiper ">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="testimonial-slider-wrap text-center">
+                  <!-- <div id="testimonial-nav">
+                        <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+                        <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+                    </div> -->
+                    <div class="row swiper-wrapper">
+
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img src="img/service1.png">
+                            <h3>Manicure</h3>
+                          </div>
+                        </div>
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img src="img/service2.png">
+                            <h3>Pedicure</h3>
+                          </div>
+                        </div>
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img   src="img/service3.png">
+                            <h3>Haircut</h3>
+                          </div>
+                        </div>
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img   src="img/service4.png">
+                            <h3>IV therap</h3>
+                          </div>
+                        </div><div class="col swiper-slide">
+                          <div class="service-box">
+                            <img   src="img/service5.png">
+                            <h3>Trimming</h3>
+                          </div>
+                        </div>
+
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img   src="img/service6.png">
+                            <h3>InfraSauna</h3>
+                          </div>
+                        </div>
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img   src="img/service7.png">
+                            <h3>IV therap</h3>
+                          </div>
+                        </div>
+
+                        <div class="col swiper-slide">
+                          <div class="service-box">
+                            <img   src="img/service8.png">
+                            <h3>IV therap</h3>
+                          </div>
+                        </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--============ End Services Area============ -->
+
+<section class="two-section">
+
+ <!-- ============ Start Ads Area============  -->
+
+<section class="justify-content-center d-flex pt-5" id="big-section" >
+  <div class="ads">
+  <div class="container position-absolute h-100">
+     <div class="row">
+        <div class="col d-flex">
+          <img class="img2" src="img/heart2.png">
+          <img class="img1" src="img/heart1.png">
+
+        </div>
+
+        <div class="col ">
+          <div class="justify-content-center">
+          <h1 class="section-title">Treat your mom for Mother Day</h1>
+         <p>20% off on selected treatments</p>
+        </div>
+        </div>
+         <div class="col">
+          <img class="img" src="img/mother.png">
+         </div>
+
+
+     </div>
+
+    </div>
+  </div>
+</section>
+
+ <!-- ============ End Ads Area============  -->
+
+
+ <!-- ============ Start Offer Area============  -->
+
+<section class="card-section ">
+    <div class="container" >
+
+    <div class="row align-items-center ">
+      <div class="col-lg-10">
+        <h1>Special Offer</h1>
+      </div>
+      <div class="col-lg-1 ">
+        <a href="#"  class="viewall-txt">View all</a>
+      </div>
+     <div class="col-lg-1 ">
+      <div id="card-nav">
+        <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+        <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+      </div>
+     </div>
+    </div>
+
+    <div class="row pt-3">
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+          <div >
+            <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner" >
+            <span></span>
+
+            <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+            <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="card-text">(26 Reviews) 4.1</span>
+
+                    <div class="pt-2 pb-2">
+                      <div class="row">
+                        <div class="col-10">
+                     <div class=" card1text">
+                     <span><strong>5 mile away </strong>  </span><br>
+                     <span>400 S 2nd St Louisville, KY 40202</span>
+                     </div>
+                         </div>
+
+                     <div class="col-2">
+                      <img  src="img/location.png" >
+                     </div>
+                    </div>
+                   </div>
+
+                   <div >
+                    <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text1" for="option1">Haircut</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                    <input type="radio" class="btn-check card-btn" name="options" id="option3" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                    <img src="img/arrowcard.png">
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                      <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                      <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                    </div>
+
+
+                    <div class="d-flex  pt-5">
+                      <div>
+                        <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                      </div>
+                      <div>
+                        <div class="text-center">
+                          <span class="card-footer-price" >$31.99</span>
+                        </div>
+                        <div class="d-flex">
+                          <span class="card-footer-price2 d-inline-block">$29.92</span>
+                          <span class="dis-present" >20%</span>
+                        </div>
+                      </div>
+                    </div>
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="service grayscale">
+          <div >
+            <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner">
+            <span></span>
+
+            <div class="row" >
+              <div class="col-lg-9 col-sm-10">
+                <h5 class="card-title">Hair X Pression Un..</h5>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="card-text">(26 Reviews)</span>
+            </div>
+            <div class="col-lg-3 col-sm-2 pt-2" >
+              <img src="img/card2img.png" >
+            </div>
+            </div>
+             <div class="pt-2 pb-2">
+              <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+              </div>
+            </div>
+
+              <div class="pb-2 pt-2 card1text">
+                <span><strong>Travels to you </strong>  </span><br>
+             <span>No travel fees / Travel fee $5.99</span>
+              </div>
+
+
+
+              <div class="pt-3 ">
+
+                <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Manicure
+                </button>
+
+                </div>
+
+                <div class="pt-3 ">
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                  <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                </div>
+
+
+                <div class="d-flex pb-4 pt-4">
+                  <div>
+                    <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                  </div>
+                  <div>
+                    <div class="text-center">
+                      <span class="card-footer-price" >$31.99</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="card-footer-price2 d-inline-block">$29.92</span>
+                      <span class="dis-present" >20%</span>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+        <div >
+          <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner" >
+          <span></span>
+
+          <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+          <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="card-text">(26 Reviews) 4.1</span>
+
+                  <div class="pt-2 pb-2">
+                    <div class="row">
+                      <div class="col-10">
+                   <div class=" card1text">
+                   <span><strong>5 mile away </strong>  </span><br>
+                   <span>400 S 2nd St Louisville, KY 40202</span>
+                   </div>
+                       </div>
+
+                   <div class="col-2">
+                    <img  src="img/location.png" >
+                   </div>
+                  </div>
+                 </div>
+
+                 <div >
+                  <input type="radio" class="btn-check " name="op" id="option11" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text1" for="option11">Haircut</label>
+
+                  <input type="radio" class="btn-check" name="op" id="option2" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                  <input type="radio" class="btn-check card-btn" name="op" id="option3" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                  <img src="img/arrowcard.png">
+
+                  </div>
+
+
+                  <div class="pt-3 ">
+                    <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                    <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                  </div>
+
+
+                  <div class="d-flex  pt-5">
+                    <div>
+                      <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                    </div>
+                    <div>
+                      <div class="text-center">
+                        <span class="card-footer-price" >$31.99</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="card-footer-price2 d-inline-block">$29.92</span>
+                        <span class="dis-present" >20%</span>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+      <div class="service grayscale">
+        <div >
+          <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner">
+          <span></span>
+
+          <div class="row" >
+            <div class="col-lg-9 col-sm-10">
+              <h5 class="card-title">Hair X Pression Un..</h5>
+              <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="card-text">(26 Reviews)</span>
+          </div>
+          <div class="col-lg-3 col-sm-2 pt-2" >
+            <img src="img/card2img.png" >
+          </div>
+          </div>
+           <div class="pt-2 pb-2">
+            <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+            </div>
+          </div>
+
+            <div class="pb-2 pt-2 card1text">
+              <span><strong>Travels to you </strong>  </span><br>
+           <span>No travel fees / Travel fee $5.99</span>
+            </div>
+
+
+
+            <div class="pt-3 ">
+
+              <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Manicure
+              </button>
+
+              </div>
+
+              <div class="pt-3 ">
+                <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+              </div>
+
+
+              <div class="d-flex pb-4 pt-4">
+                <div>
+                  <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                </div>
+                <div>
+                  <div class="text-center">
+                    <span class="card-footer-price" >$31.99</span>
+                  </div>
+                  <div class="d-flex">
+                    <span class="card-footer-price2 d-inline-block">$29.92</span>
+                    <span class="dis-present" >20%</span>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+</section>
+
+
+<!-- ============ End Offer Area============  -->
+<!-- ========== End Two Section ======== -->
+
+
+<!--=========Start Populer Business=======-->
+<section class="popular-businesss pt-5">
+  <section class="card-section ">
+    <div class="container" >
+
+    <div class="row align-items-center ">
+      <div class="col-lg-10">
+        <h1>Popular Businesses</h1>
+      </div>
+      <div class="col-lg-1 ">
+        <a href="#"  class="viewall-txt">View all</a>
+      </div>
+     <div class="col-lg-1 ">
+      <div id="card-nav">
+        <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+        <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+      </div>
+     </div>
+    </div>
+
+    <div class="row pt-3">
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+          <div >
+            <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner" >
+            <span></span>
+
+            <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+            <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="card-text">(26 Reviews) 4.1</span>
+
+                    <div class="pt-2 pb-2">
+                      <div class="row">
+                        <div class="col-10">
+                     <div class=" card1text">
+                     <span><strong>5 mile away </strong>  </span><br>
+                     <span>400 S 2nd St Louisville, KY 40202</span>
+                     </div>
+                         </div>
+
+                     <div class="col-2">
+                      <img  src="img/location.png" >
+                     </div>
+                    </div>
+                   </div>
+
+                   <div >
+                    <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text1" for="option1">Haircut</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                    <input type="radio" class="btn-check card-btn" name="options" id="option3" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                    <img src="img/arrowcard.png">
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                      <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                      <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                    </div>
+
+
+                    <div class="d-flex  pt-5">
+                      <div>
+                        <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                      </div>
+                      <div>
+                        <div class="text-center">
+                          <span class="card-footer-price" >$31.99</span>
+                        </div>
+                        <div class="d-flex">
+                          <span class="card-footer-price2 d-inline-block">$29.92</span>
+                          <span class="dis-present" >20%</span>
+                        </div>
+                      </div>
+                    </div>
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="service grayscale">
+          <div >
+            <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner">
+            <span></span>
+
+            <div class="row" >
+              <div class="col-lg-9 col-sm-10">
+                <h5 class="card-title">Hair X Pression Un..</h5>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="card-text">(26 Reviews)</span>
+            </div>
+            <div class="col-lg-3 col-sm-2 pt-2" >
+              <img src="img/card2img.png" >
+            </div>
+            </div>
+             <div class="pt-2 pb-2">
+              <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+              </div>
+            </div>
+
+              <div class="pb-2 pt-2 card1text">
+                <span><strong>Travels to you </strong>  </span><br>
+             <span>No travel fees / Travel fee $5.99</span>
+              </div>
+
+
+
+              <div class="pt-3 ">
+
+                <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Manicure
+                </button>
+
+                </div>
+
+                <div class="pt-3 ">
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                  <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                </div>
+
+
+                <div class="d-flex pb-4 pt-4">
+                  <div>
+                    <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                  </div>
+                  <div>
+                    <div class="text-center">
+                      <span class="card-footer-price" >$31.99</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="card-footer-price2 d-inline-block">$29.92</span>
+                      <span class="dis-present" >20%</span>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+        <div >
+          <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner" >
+          <span></span>
+
+          <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+          <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="card-text">(26 Reviews) 4.1</span>
+
+                  <div class="pt-2 pb-2">
+                    <div class="row">
+                      <div class="col-10">
+                   <div class=" card1text">
+                   <span><strong>5 mile away </strong>  </span><br>
+                   <span>400 S 2nd St Louisville, KY 40202</span>
+                   </div>
+                       </div>
+
+                   <div class="col-2">
+                    <img  src="img/location.png" >
+                   </div>
+                  </div>
+                 </div>
+
+                 <div >
+                  <input type="radio" class="btn-check " name="op" id="option11" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text1" for="option11">Haircut</label>
+
+                  <input type="radio" class="btn-check" name="op" id="option2" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                  <input type="radio" class="btn-check card-btn" name="op" id="option3" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                  <img src="img/arrowcard.png">
+
+                  </div>
+
+
+                  <div class="pt-3 ">
+                    <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                    <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                  </div>
+
+
+                  <div class="d-flex  pt-5">
+                    <div>
+                      <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                    </div>
+                    <div>
+                      <div class="text-center">
+                        <span class="card-footer-price" >$31.99</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="card-footer-price2 d-inline-block">$29.92</span>
+                        <span class="dis-present" >20%</span>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+      <div class="service grayscale">
+        <div >
+          <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner">
+          <span></span>
+
+          <div class="row" >
+            <div class="col-lg-9 col-sm-10">
+              <h5 class="card-title">Hair X Pression Un..</h5>
+              <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="card-text">(26 Reviews)</span>
+          </div>
+          <div class="col-lg-3 col-sm-2 pt-2" >
+            <img src="img/card2img.png" >
+          </div>
+          </div>
+           <div class="pt-2 pb-2">
+            <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+            </div>
+          </div>
+
+            <div class="pb-2 pt-2 card1text">
+              <span><strong>Travels to you </strong>  </span><br>
+           <span>No travel fees / Travel fee $5.99</span>
+            </div>
+
+
+
+            <div class="pt-3 ">
+
+              <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Manicure
+              </button>
+
+              </div>
+
+              <div class="pt-3 ">
+                <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+              </div>
+
+
+              <div class="d-flex pb-4 pt-4">
+                <div>
+                  <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                </div>
+                <div>
+                  <div class="text-center">
+                    <span class="card-footer-price" >$31.99</span>
+                  </div>
+                  <div class="d-flex">
+                    <span class="card-footer-price2 d-inline-block">$29.92</span>
+                    <span class="dis-present" >20%</span>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+</section>
+<!--=========End Populer Business=======-->
+
+<!--=========Start Featured Businesses=======-->
+<section class=" featured-businesses pt-5">
+  <section class="card-section ">
+    <div class="container" >
+
+    <div class="row align-items-center ">
+      <div class="col-lg-10">
+        <h1>Featured Businesses</h1>
+      </div>
+      <div class="col-lg-1 ">
+        <a href="#"  class="viewall-txt">View all</a>
+      </div>
+     <div class="col-lg-1 ">
+      <div id="card-nav">
+        <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+        <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+      </div>
+     </div>
+    </div>
+
+    <div class="row pt-3">
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+          <div >
+            <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner" >
+            <span></span>
+
+            <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+            <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="card-text">(26 Reviews) 4.1</span>
+
+                    <div class="pt-2 pb-2">
+                      <div class="row">
+                        <div class="col-10">
+                     <div class=" card1text">
+                     <span><strong>5 mile away </strong>  </span><br>
+                     <span>400 S 2nd St Louisville, KY 40202</span>
+                     </div>
+                         </div>
+
+                     <div class="col-2">
+                      <img  src="img/location.png" >
+                     </div>
+                    </div>
+                   </div>
+
+                   <div >
+                    <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text1" for="option1">Haircut</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                    <input type="radio" class="btn-check card-btn" name="options" id="option3" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                    <img src="img/arrowcard.png">
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                      <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                      <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                    </div>
+
+
+                    <div class="d-flex  pt-5">
+                      <div>
+                        <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                      </div>
+                      <div>
+                        <div class="text-center">
+                          <span class="card-footer-price" >$31.99</span>
+                        </div>
+                        <div class="d-flex">
+                          <span class="card-footer-price2 d-inline-block">$29.92</span>
+                          <span class="dis-present" >20%</span>
+                        </div>
+                      </div>
+                    </div>
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="service grayscale">
+          <div >
+            <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner">
+            <span></span>
+
+            <div class="row" >
+              <div class="col-lg-9 col-sm-10">
+                <h5 class="card-title">Hair X Pression Un..</h5>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="card-text">(26 Reviews)</span>
+            </div>
+            <div class="col-lg-3 col-sm-2 pt-2" >
+              <img src="img/card2img.png" >
+            </div>
+            </div>
+             <div class="pt-2 pb-2">
+              <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+              </div>
+            </div>
+
+              <div class="pb-2 pt-2 card1text">
+                <span><strong>Travels to you </strong>  </span><br>
+             <span>No travel fees / Travel fee $5.99</span>
+              </div>
+
+
+
+              <div class="pt-3 ">
+
+                <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Manicure
+                </button>
+
+                </div>
+
+                <div class="pt-3 ">
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                  <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                </div>
+
+
+                <div class="d-flex pb-4 pt-4">
+                  <div>
+                    <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                  </div>
+                  <div>
+                    <div class="text-center">
+                      <span class="card-footer-price" >$31.99</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="card-footer-price2 d-inline-block">$29.92</span>
+                      <span class="dis-present" >20%</span>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+        <div >
+          <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner" >
+          <span></span>
+
+          <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+          <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="card-text">(26 Reviews) 4.1</span>
+
+                  <div class="pt-2 pb-2">
+                    <div class="row">
+                      <div class="col-10">
+                   <div class=" card1text">
+                   <span><strong>5 mile away </strong>  </span><br>
+                   <span>400 S 2nd St Louisville, KY 40202</span>
+                   </div>
+                       </div>
+
+                   <div class="col-2">
+                    <img  src="img/location.png" >
+                   </div>
+                  </div>
+                 </div>
+
+                 <div >
+                  <input type="radio" class="btn-check " name="op" id="option11" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text1" for="option11">Haircut</label>
+
+                  <input type="radio" class="btn-check" name="op" id="option2" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                  <input type="radio" class="btn-check card-btn" name="op" id="option3" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                  <img src="img/arrowcard.png">
+
+                  </div>
+
+
+                  <div class="pt-3 ">
+                    <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                    <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                  </div>
+
+
+                  <div class="d-flex  pt-5">
+                    <div>
+                      <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                    </div>
+                    <div>
+                      <div class="text-center">
+                        <span class="card-footer-price" >$31.99</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="card-footer-price2 d-inline-block">$29.92</span>
+                        <span class="dis-present" >20%</span>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+      <div class="service grayscale">
+        <div >
+          <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner">
+          <span></span>
+
+          <div class="row" >
+            <div class="col-lg-9 col-sm-10">
+              <h5 class="card-title">Hair X Pression Un..</h5>
+              <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="card-text">(26 Reviews)</span>
+          </div>
+          <div class="col-lg-3 col-sm-2 pt-2" >
+            <img src="img/card2img.png" >
+          </div>
+          </div>
+           <div class="pt-2 pb-2">
+            <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+            </div>
+          </div>
+
+            <div class="pb-2 pt-2 card1text">
+              <span><strong>Travels to you </strong>  </span><br>
+           <span>No travel fees / Travel fee $5.99</span>
+            </div>
+
+
+
+            <div class="pt-3 ">
+
+              <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Manicure
+              </button>
+
+              </div>
+
+              <div class="pt-3 ">
+                <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+              </div>
+
+
+              <div class="d-flex pb-4 pt-4">
+                <div>
+                  <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                </div>
+                <div>
+                  <div class="text-center">
+                    <span class="card-footer-price" >$31.99</span>
+                  </div>
+                  <div class="d-flex">
+                    <span class="card-footer-price2 d-inline-block">$29.92</span>
+                    <span class="dis-present" >20%</span>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+</section>
+<!--=========End Featured Businesses=======-->
+
+<!--=========Start Hair Salon’s=======-->
+<section class=" hair-salon pt-5">
+  <section class="card-section ">
+    <div class="container" >
+
+    <div class="row align-items-center ">
+      <div class="col-lg-10">
+        <h1>Hair Salon’s</h1>
+      </div>
+      <div class="col-lg-1 ">
+        <a href="#"  class="viewall-txt">View all</a>
+      </div>
+     <div class="col-lg-1 ">
+      <div id="card-nav">
+        <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+        <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+      </div>
+     </div>
+    </div>
+
+    <div class="row pt-3">
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+          <div >
+            <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner" >
+            <span></span>
+
+            <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+            <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="card-text">(26 Reviews) 4.1</span>
+
+                    <div class="pt-2 pb-2">
+                      <div class="row">
+                        <div class="col-10">
+                     <div class=" card1text">
+                     <span><strong>5 mile away </strong>  </span><br>
+                     <span>400 S 2nd St Louisville, KY 40202</span>
+                     </div>
+                         </div>
+
+                     <div class="col-2">
+                      <img  src="img/location.png" >
+                     </div>
+                    </div>
+                   </div>
+
+                   <div >
+                    <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text1" for="option1">Haircut</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                    <input type="radio" class="btn-check card-btn" name="options" id="option3" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                    <img src="img/arrowcard.png">
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                      <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                      <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                    </div>
+
+
+                    <div class="d-flex  pt-5">
+                      <div>
+                        <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                      </div>
+                      <div>
+                        <div class="text-center">
+                          <span class="card-footer-price" >$31.99</span>
+                        </div>
+                        <div class="d-flex">
+                          <span class="card-footer-price2 d-inline-block">$29.92</span>
+                          <span class="dis-present" >20%</span>
+                        </div>
+                      </div>
+                    </div>
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="service grayscale">
+          <div >
+            <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner">
+            <span></span>
+
+            <div class="row" >
+              <div class="col-lg-9 col-sm-10">
+                <h5 class="card-title">Hair X Pression Un..</h5>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="card-text">(26 Reviews)</span>
+            </div>
+            <div class="col-lg-3 col-sm-2 pt-2" >
+              <img src="img/card2img.png" >
+            </div>
+            </div>
+             <div class="pt-2 pb-2">
+              <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+              </div>
+            </div>
+
+              <div class="pb-2 pt-2 card1text">
+                <span><strong>Travels to you </strong>  </span><br>
+             <span>No travel fees / Travel fee $5.99</span>
+              </div>
+
+
+
+              <div class="pt-3 ">
+
+                <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Manicure
+                </button>
+
+                </div>
+
+                <div class="pt-3 ">
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                  <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                </div>
+
+
+                <div class="d-flex pb-4 pt-4">
+                  <div>
+                    <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                  </div>
+                  <div>
+                    <div class="text-center">
+                      <span class="card-footer-price" >$31.99</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="card-footer-price2 d-inline-block">$29.92</span>
+                      <span class="dis-present" >20%</span>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+        <div >
+          <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner" >
+          <span></span>
+
+          <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+          <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="card-text">(26 Reviews) 4.1</span>
+
+                  <div class="pt-2 pb-2">
+                    <div class="row">
+                      <div class="col-10">
+                   <div class=" card1text">
+                   <span><strong>5 mile away </strong>  </span><br>
+                   <span>400 S 2nd St Louisville, KY 40202</span>
+                   </div>
+                       </div>
+
+                   <div class="col-2">
+                    <img  src="img/location.png" >
+                   </div>
+                  </div>
+                 </div>
+
+                 <div >
+                  <input type="radio" class="btn-check " name="op" id="option11" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text1" for="option11">Haircut</label>
+
+                  <input type="radio" class="btn-check" name="op" id="option2" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                  <input type="radio" class="btn-check card-btn" name="op" id="option3" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                  <img src="img/arrowcard.png">
+
+                  </div>
+
+
+                  <div class="pt-3 ">
+                    <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                    <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                    <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                  </div>
+
+
+                  <div class="d-flex  pt-5">
+                    <div>
+                      <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                    </div>
+                    <div>
+                      <div class="text-center">
+                        <span class="card-footer-price" >$31.99</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="card-footer-price2 d-inline-block">$29.92</span>
+                        <span class="dis-present" >20%</span>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+      <div class="service grayscale">
+        <div >
+          <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+        </div>
+        <div class="card-inner">
+          <span></span>
+
+          <div class="row" >
+            <div class="col-lg-9 col-sm-10">
+              <h5 class="card-title">Hair X Pression Un..</h5>
+              <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="card-text">(26 Reviews)</span>
+          </div>
+          <div class="col-lg-3 col-sm-2 pt-2" >
+            <img src="img/card2img.png" >
+          </div>
+          </div>
+           <div class="pt-2 pb-2">
+            <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+            </div>
+          </div>
+
+            <div class="pb-2 pt-2 card1text">
+              <span><strong>Travels to you </strong>  </span><br>
+           <span>No travel fees / Travel fee $5.99</span>
+            </div>
+
+
+
+            <div class="pt-3 ">
+
+              <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Manicure
+              </button>
+
+              </div>
+
+              <div class="pt-3 ">
+                <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+              </div>
+
+
+              <div class="d-flex pb-4 pt-4">
+                <div>
+                  <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                </div>
+                <div>
+                  <div class="text-center">
+                    <span class="card-footer-price" >$31.99</span>
+                  </div>
+                  <div class="d-flex">
+                    <span class="card-footer-price2 d-inline-block">$29.92</span>
+                    <span class="dis-present" >20%</span>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+</section>
+<!--=========End Hair Salon’s=======-->
+
+<!--=========Start Boka Transformation=======-->
+<section class="justify-content-center d-flex tranfromation pt-5 " >
+  <div class="container" >
+    <div class="row mb-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="h1-category">Boka Transformation</h2>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <a class="btn min-btn" href="#">Book Now</a>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col col-md-6">
+      <img src="img/after.png" class="img">
+      <img src="img/before.png" class="img">
+    </div>
+    <div class="col col-md-6">
+      <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...”</p>
+      <div class="author d-flex pt-4">
+
+        <div class="pic mr-3">
+          <img src="img/customer.png" alt="Image" class="img-fluid ">
+        </div>
+        <div style="margin-left: 5px;">
+          <strong class="d-block customer-name-up">Anup Kanti Deb</strong>
+          <span class="d-block  customer-name-down">Sylhet, Bangladesh</span>
+        </div>
+      </div>
+
+      <div class="pt-5">
+      <span class="trantxt">Book Shoukri for $49</span></div>
+
+    </div>
+  </div>
+
+</div>
+
+</section>
+<!--=========End Boka Transformation=======-->
+
+<!-- =========Start Popular Category========-->
+
+<section class="category" >
+  <div class="container pt-5 pb-5" >
+    <div class="row mb-5 align-items-center">
+      <div class="col-lg-6">
+        <h2 class="h1-category">Popular Category</h2>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <p><a href="#"  class="cat-txt">View all Category</a></p>
+      </div>
+    </div>
+
+        <div class="main-banner" id="top">
+              <div class="row">
+
+                  <div class="col-lg-6">
+                      <div class="left-content">
+                          <div class="thumb">
+                              <div class="inner-content">
+                                  <h4>Manicure</h4>
+                                  <span>243+ Business</span>
+                              </div>
+                              <img src="img/cat1.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                      <div class="right-content">
+                          <div class="row">
+                              <div class="col-lg-6">
+                                  <div class="right-first-image">
+                                      <div class="thumb">
+                                          <div class="inner-content">
+                                              <h4>Pedicure</h4>
+                                          </div>
+                                          <div class="hover-content">
+                                              <div class="inner">
+                                                  <h4>Pedicure</h4>
+                                                  <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                  <div class="main-border-button">
+                                                      <a href="#">Discover More</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <img src="img/cat2.png">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="right-first-image">
+                                      <div class="thumb">
+                                          <div class="inner-content">
+                                              <h4>Haircut</h4>
+                                          </div>
+                                          <div class="hover-content">
+                                              <div class="inner">
+                                                  <h4>Haircut</h4>
+                                                  <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                  <div class="main-border-button">
+                                                      <a href="#">Discover More</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <img src="img/cat4.png">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="right-first-image">
+                                      <div class="thumb">
+                                          <div class="inner-content">
+                                              <h4>IV therap</h4>
+                                          </div>
+                                          <div class="hover-content">
+                                              <div class="inner">
+                                                  <h4>IV therap</h4>
+                                                  <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                  <div class="main-border-button">
+                                                      <a href="#">Discover More</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <img src="img/cat3.png">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="right-first-image">
+                                      <div class="thumb">
+                                          <div class="inner-content">
+                                              <h4>Trimming</h4>
+                                          </div>
+                                          <div class="hover-content">
+                                              <div class="inner">
+                                                  <h4>Trimming</h4>
+                                                  <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
+                                                  <div class="main-border-button">
+                                                      <a href="#">Discover More</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <img src="img/cat5.png">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+
+ </div>
+</section>
+<!-- =========End Popular Category========-->
+
+<!--==========Start Customer Says========-->
+<div class="site-section testimonial-wrap pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 mb-5 text-center">
+        <h1 class="section-title">Our happy customers say about us</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 mb-4 mb-md-0  pb-2">
+        <div class="testimonial">
+          <blockquote>
+            <p>&ldquo;Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...&rdquo;</p>
+          </blockquote>
+          <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="customer-name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Jack Daniels</span>
+
+          <div class="author d-flex pt-4">
+            <div class="pic mr-3">
+              <img src="img/customer.png" alt="Image" class="img-fluid ">
+            </div>
+            <div style="margin-left: 5px;">
+              <strong class="d-block customer-name-up">Anup Kanti Deb</strong>
+              <span class="d-block  customer-name-down">Sylhet, Bangladesh</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4 mb-md-0  pb-2">
+        <div class="testimonial">
+          <blockquote>
+            <p>&ldquo;Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...&rdquo;</p>
+          </blockquote>
+          <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="customer-name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Jack Daniels</span>
+
+          <div class="author d-flex pt-4">
+            <div class="pic mr-3">
+              <img src="img/customer.png" alt="Image" class="img-fluid ">
+            </div>
+            <div style="margin-left: 5px;">
+              <strong class="d-block customer-name-up">Anup Kanti Deb</strong>
+              <span class="d-block  customer-name-down">Sylhet, Bangladesh</span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4 mb-md-0  pb-2">
+        <div class="testimonial">
+          <blockquote>
+            <p>&ldquo;Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...&rdquo;</p>
+          </blockquote>
+          <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="customer-name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Jack Daniels</span>
+
+          <div class="author d-flex pt-4">
+            <div class="pic mr-3">
+              <img src="img/customer.png" alt="Image" class="img-fluid ">
+            </div>
+            <div style="margin-left: 5px;">
+              <strong class="d-block customer-name-up">Anup Kanti Deb</strong>
+              <span class="d-block  customer-name-down">Sylhet, Bangladesh</span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4 mb-md-0  pb-2">
+        <div class="testimonial">
+          <blockquote>
+            <p>&ldquo;Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...&rdquo;</p>
+          </blockquote>
+          <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="customer-name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Jack Daniels</span>
+
+          <div class="author d-flex pt-4">
+            <div class="pic mr-3">
+              <img src="img/customer.png" alt="Image" class="img-fluid ">
+            </div>
+            <div style="margin-left: 5px;">
+              <strong class="d-block customer-name-up">Anup Kanti Deb</strong>
+              <span class="d-block  customer-name-down">Sylhet, Bangladesh</span>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--=========End Customer Says==========-->
+
+ <!-- =======Start Clients Section =======  -->
+ <div class="client">
+  <div class="container">
+    <div class="row pt-5 ">
+      <div class="col col-sm-6 col-md-4 col-lg pt-4">
+        <img src="img/client1.png" alt="Image" class="img-fluid">
+      </div>
+      <div class="col col-sm-6 col-md-4 col-lg pt-4">
+        <img src="img/client2.png" alt="Image" class="img-fluid">
+      </div>
+      <div class="col col-sm-6 col-md-4 col-lg pt-4">
+        <img src="img/client3.png" alt="Image" class="img-fluid">
+      </div>
+      <div class="col col-sm-6 col-md-4 col-lg pt-4">
+        <img src="img/client4.png" alt="Image" class="img-fluid">
+      </div>
+      <div class="col col-sm-6 col-md-4 col-lg pt-4">
+        <img src="img/client5.png" alt="Image" class="img-fluid">
+      </div>
+
+    </div>
+  </div>
+  </div>
+ <!-- =======End Clients Section =======  -->
+
+
+  <!--=========Start Exploring Businesses=======-->
+  <section class=" exploring-businesses pt-5">
+    <section class="card-section ">
+      <div class="container" >
+
+      <div class="row align-items-center ">
+        <div class="col-lg-10">
+          <h1>Exploring Businesses</h1>
+        </div>
+        <div class="col-lg-1 ">
+          <a href="#"  class="viewall-txt">View all</a>
+        </div>
+       <div class="col-lg-1 ">
+        <div id="card-nav">
+          <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+          <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+        </div>
+       </div>
+      </div>
+
+      <div class="row pt-3">
+
+        <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+            <div >
+              <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+            </div>
+            <div class="card-inner" >
+              <span></span>
+
+              <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+              <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="card-text">(26 Reviews) 4.1</span>
+
+                      <div class="pt-2 pb-2">
+                        <div class="row">
+                          <div class="col-10">
+                       <div class=" card1text">
+                       <span><strong>5 mile away </strong>  </span><br>
+                       <span>400 S 2nd St Louisville, KY 40202</span>
+                       </div>
+                           </div>
+
+                       <div class="col-2">
+                        <img  src="img/location.png" >
+                       </div>
+                      </div>
+                     </div>
+
+                     <div >
+                      <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text1" for="option1">Haircut</label>
+
+                      <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                      <input type="radio" class="btn-check card-btn" name="options" id="option3" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                      <img src="img/arrowcard.png">
+
+                      </div>
+
+
+                      <div class="pt-3 ">
+                        <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                        <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                        <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                        <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                        <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                        <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                        <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                        <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                      </div>
+
+
+                      <div class="d-flex  pt-5">
+                        <div>
+                          <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                        </div>
+                        <div>
+                          <div class="text-center">
+                            <span class="card-footer-price" >$31.99</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="card-footer-price2 d-inline-block">$29.92</span>
+                            <span class="dis-present" >20%</span>
+                          </div>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="service grayscale">
+            <div >
+              <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+            </div>
+            <div class="card-inner">
+              <span></span>
+
+              <div class="row" >
+                <div class="col-lg-9 col-sm-10">
+                  <h5 class="card-title">Hair X Pression Un..</h5>
+                  <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="card-text">(26 Reviews)</span>
+              </div>
+              <div class="col-lg-3 col-sm-2 pt-2" >
+                <img src="img/card2img.png" >
+              </div>
+              </div>
+               <div class="pt-2 pb-2">
+                <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                    <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                    <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                    <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                    <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+                </div>
+              </div>
+
+                <div class="pb-2 pt-2 card1text">
+                  <span><strong>Travels to you </strong>  </span><br>
+               <span>No travel fees / Travel fee $5.99</span>
+                </div>
+
+
+
+                <div class="pt-3 ">
+
+                  <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    Manicure
+                  </button>
+
+                  </div>
+
+                  <div class="pt-3 ">
+                    <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                    <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                    <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                    <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                  </div>
+
+
+                  <div class="d-flex pb-4 pt-4">
+                    <div>
+                      <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                    </div>
+                    <div>
+                      <div class="text-center">
+                        <span class="card-footer-price" >$31.99</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="card-footer-price2 d-inline-block">$29.92</span>
+                        <span class="dis-present" >20%</span>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+          <div >
+            <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner" >
+            <span></span>
+
+            <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+            <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="card-text">(26 Reviews) 4.1</span>
+
+                    <div class="pt-2 pb-2">
+                      <div class="row">
+                        <div class="col-10">
+                     <div class=" card1text">
+                     <span><strong>5 mile away </strong>  </span><br>
+                     <span>400 S 2nd St Louisville, KY 40202</span>
+                     </div>
+                         </div>
+
+                     <div class="col-2">
+                      <img  src="img/location.png" >
+                     </div>
+                    </div>
+                   </div>
+
+                   <div >
+                    <input type="radio" class="btn-check " name="op" id="option11" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text1" for="option11">Haircut</label>
+
+                    <input type="radio" class="btn-check" name="op" id="option2" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                    <input type="radio" class="btn-check card-btn" name="op" id="option3" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                    <img src="img/arrowcard.png">
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                      <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                      <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                    </div>
+
+
+                    <div class="d-flex  pt-5">
+                      <div>
+                        <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                      </div>
+                      <div>
+                        <div class="text-center">
+                          <span class="card-footer-price" >$31.99</span>
+                        </div>
+                        <div class="d-flex">
+                          <span class="card-footer-price2 d-inline-block">$29.92</span>
+                          <span class="dis-present" >20%</span>
+                        </div>
+                      </div>
+                    </div>
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="service grayscale">
+          <div >
+            <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner">
+            <span></span>
+
+            <div class="row" >
+              <div class="col-lg-9 col-sm-10">
+                <h5 class="card-title">Hair X Pression Un..</h5>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="card-text">(26 Reviews)</span>
+            </div>
+            <div class="col-lg-3 col-sm-2 pt-2" >
+              <img src="img/card2img.png" >
+            </div>
+            </div>
+             <div class="pt-2 pb-2">
+              <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+              </div>
+            </div>
+
+              <div class="pb-2 pt-2 card1text">
+                <span><strong>Travels to you </strong>  </span><br>
+             <span>No travel fees / Travel fee $5.99</span>
+              </div>
+
+
+
+              <div class="pt-3 ">
+
+                <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Manicure
+                </button>
+
+                </div>
+
+                <div class="pt-3 ">
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                  <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                </div>
+
+
+                <div class="d-flex pb-4 pt-4">
+                  <div>
+                    <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                  </div>
+                  <div>
+                    <div class="text-center">
+                      <span class="card-footer-price" >$31.99</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="card-footer-price2 d-inline-block">$29.92</span>
+                      <span class="dis-present" >20%</span>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  </section>
+  <!--=========End Exploring Businesses=======-->
+
+  <!--=========Start More Business======-->
+  <section class=" more-business pt-5 pb-5">
+    <section class="card-section ">
+      <div class="container" >
+
+      <div class="row align-items-center ">
+        <div class="col-lg-10">
+          <h1>More Business</h1>
+        </div>
+        <div class="col-lg-1 ">
+          <a href="#"  class="viewall-txt">View all</a>
+        </div>
+       <div class="col-lg-1 ">
+        <div id="card-nav">
+          <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+          <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+        </div>
+       </div>
+      </div>
+
+      <div class="row pt-3">
+
+        <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+            <div >
+              <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+            </div>
+            <div class="card-inner" >
+              <span></span>
+
+              <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+              <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="card-text">(26 Reviews) 4.1</span>
+
+                      <div class="pt-2 pb-2">
+                        <div class="row">
+                          <div class="col-10">
+                       <div class=" card1text">
+                       <span><strong>5 mile away </strong>  </span><br>
+                       <span>400 S 2nd St Louisville, KY 40202</span>
+                       </div>
+                           </div>
+
+                       <div class="col-2">
+                        <img  src="img/location.png" >
+                       </div>
+                      </div>
+                     </div>
+
+                     <div >
+                      <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text1" for="option1">Haircut</label>
+
+                      <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                      <input type="radio" class="btn-check card-btn" name="options" id="option3" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                      <img src="img/arrowcard.png">
+
+                      </div>
+
+
+                      <div class="pt-3 ">
+                        <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                        <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                        <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                        <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                        <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                        <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                        <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                        <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                      </div>
+
+
+                      <div class="d-flex  pt-5">
+                        <div>
+                          <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                        </div>
+                        <div>
+                          <div class="text-center">
+                            <span class="card-footer-price" >$31.99</span>
+                          </div>
+                          <div class="d-flex">
+                            <span class="card-footer-price2 d-inline-block">$29.92</span>
+                            <span class="dis-present" >20%</span>
+                          </div>
+                        </div>
+                      </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="service grayscale">
+            <div >
+              <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+            </div>
+            <div class="card-inner">
+              <span></span>
+
+              <div class="row" >
+                <div class="col-lg-9 col-sm-10">
+                  <h5 class="card-title">Hair X Pression Un..</h5>
+                  <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="card-text">(26 Reviews)</span>
+              </div>
+              <div class="col-lg-3 col-sm-2 pt-2" >
+                <img src="img/card2img.png" >
+              </div>
+              </div>
+               <div class="pt-2 pb-2">
+                <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                    <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                    <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                    <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                    <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+                </div>
+              </div>
+
+                <div class="pb-2 pt-2 card1text">
+                  <span><strong>Travels to you </strong>  </span><br>
+               <span>No travel fees / Travel fee $5.99</span>
+                </div>
+
+
+
+                <div class="pt-3 ">
+
+                  <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    Manicure
+                  </button>
+
+                  </div>
+
+                  <div class="pt-3 ">
+                    <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                    <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                    <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                    <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                  </div>
+
+
+                  <div class="d-flex pb-4 pt-4">
+                    <div>
+                      <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                    </div>
+                    <div>
+                      <div class="text-center">
+                        <span class="card-footer-price" >$31.99</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="card-footer-price2 d-inline-block">$29.92</span>
+                        <span class="dis-present" >20%</span>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3  col-sm-12 mb-4 mb-lg-0 " data-aos="fade-up" data-aos-delay="0">
+          <div >
+            <a href="#"><img src="img/offer1.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner" >
+            <span></span>
+
+            <h5 class="card-title">Hair X Pression Unisex Hair..</h5>
+            <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="card-text">(26 Reviews) 4.1</span>
+
+                    <div class="pt-2 pb-2">
+                      <div class="row">
+                        <div class="col-10">
+                     <div class=" card1text">
+                     <span><strong>5 mile away </strong>  </span><br>
+                     <span>400 S 2nd St Louisville, KY 40202</span>
+                     </div>
+                         </div>
+
+                     <div class="col-2">
+                      <img  src="img/location.png" >
+                     </div>
+                    </div>
+                   </div>
+
+                   <div >
+                    <input type="radio" class="btn-check " name="op" id="option11" autocomplete="off" checked>
+                    <label class="btn card-redio-btn card-redio-text1" for="option11">Haircut</label>
+
+                    <input type="radio" class="btn-check" name="op" id="option2" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option2">Manicure</label>
+
+                    <input type="radio" class="btn-check card-btn" name="op" id="option3" autocomplete="off">
+                    <label class="btn card-redio-btn card-redio-text1 " for="option3">Infra</label>
+                    <img src="img/arrowcard.png">
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                      <input type="radio" class="btn-check card-btn" name="time" id="option5" autocomplete="off" checked>
+                      <label class="btn card-redio-btn card-redio-text2" for="option5">8:00 am</label>
+
+                      <input type="radio" class="btn-check" name="time" id="option6" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option6">8:30 am</label>
+
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option7" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option7">8:30 am</label>
+
+                      <input type="radio" class="btn-check card-btn" name="time" id="option4" autocomplete="off">
+                      <label class="btn card-redio-btn card-redio-text2" for="option4">+5</label>
+
+                    </div>
+
+
+                    <div class="d-flex  pt-5">
+                      <div>
+                        <span class=" card-footer-text" style="margin-right: 60px; ">Booked x today</span>
+                      </div>
+                      <div>
+                        <div class="text-center">
+                          <span class="card-footer-price" >$31.99</span>
+                        </div>
+                        <div class="d-flex">
+                          <span class="card-footer-price2 d-inline-block">$29.92</span>
+                          <span class="dis-present" >20%</span>
+                        </div>
+                      </div>
+                    </div>
+
+          </div>
+      </div>
+
+
+      <div class="col-lg-3  mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="service grayscale">
+          <div >
+            <a href="#"><img src="img/offer2.png" alt="Image" class="card-img-top"></a>
+          </div>
+          <div class="card-inner">
+            <span></span>
+
+            <div class="row" >
+              <div class="col-lg-9 col-sm-10">
+                <h5 class="card-title">Hair X Pression Un..</h5>
+                <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="card-text">(26 Reviews)</span>
+            </div>
+            <div class="col-lg-3 col-sm-2 pt-2" >
+              <img src="img/card2img.png" >
+            </div>
+            </div>
+             <div class="pt-2 pb-2">
+              <div class="btn-group redio-btn text-center pt-2 redio-btns">
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio1" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio1"><img class="redio-icon1" src="img/redio1.png " >&nbsp; At Home Service</label>
+
+                  <input type="radio" class="btn-check redio-btn1" name="options" id="radio3" autocomplete="off">
+                  <label class="btn redio-btn-text-card" for="radio3"><img class="redio-icon1" src="img/redio2.png " >&nbsp;Provider Studio</label>
+              </div>
+            </div>
+
+              <div class="pb-2 pt-2 card1text">
+                <span><strong>Travels to you </strong>  </span><br>
+             <span>No travel fees / Travel fee $5.99</span>
+              </div>
+
+
+
+              <div class="pt-3 ">
+
+                <button type="button" class="btn redio-btn-text-card redio-btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Manicure
+                </button>
+
+                </div>
+
+                <div class="pt-3 ">
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option55" autocomplete="off" checked>
+                  <label class="btn card-redio-btn card-redio-text2" for="option55">8:00 am</label>
+
+                  <input type="radio" class="btn-check" name="time1" id="option66" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option66">8:30 am</label>
+
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option77" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option77">8:30 am</label>
+
+                  <input type="radio" class="btn-check card-btn" name="time1" id="option44" autocomplete="off">
+                  <label class="btn card-redio-btn card-redio-text2" for="option44">+5</label>
+
+                </div>
+
+
+                <div class="d-flex pb-4 pt-4">
+                  <div>
+                    <span class=" card-footer-text" style="margin-right: 70px; ">Booked x today</span>
+                  </div>
+                  <div>
+                    <div class="text-center">
+                      <span class="card-footer-price" >$31.99</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="card-footer-price2 d-inline-block">$29.92</span>
+                      <span class="dis-present" >20%</span>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  </section>
+<!--=========End More Business======-->
+
+<!--=========Start Footer======-->
+<div class="site-footer">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="widget">
+          <ul class="list-unstyled float-left links">
+          <li><a class="navbar-brand" href="#"> <img src="img/logo.png" /></a></li>
+         <p class="fo">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit, sed do eius mod tempor incididunt.</p>
+         </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+
+
+      <div class="col-lg-2 ml-auto">
+        <div class="widget">
+          <h3>Discover</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Dining Rewards</a></li>
+            <li><a href="#">Private Dining</a></li>
+            <li><a href="#">Reserve for Others</a></li>
+            <li><a href="#">Cuisines Near Me</a></li>
+            <li><a href="#">Restaurants Near Me</a></li>
+            <li><a href="#">Delivery Near Me</a></li>
+            <li><a href="#">Cuisines</a></li>
+            <li><a href="#">Restaurants Open Now</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col-lg-2">
+        <div class="widget">
+          <h3>Opentable</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">More</a></li>
+            <li><a href="#">OpenTable for iOS</a></li>
+            <li><a href="#">OpenTable for Android</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+
+      <div class="col-lg-2">
+        <div class="widget">
+          <h3>Our Sites</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">OpenTable.jp</a></li>
+            <li><a href="#">OpenTable.de</a></li>
+            <li><a href="#">OpenTable.es</a></li>
+            <li><a href="#">OpenTable.ca</a></li>
+            <li><a href="#">OpenTable.hk</a></li>
+            <li><a href="#">OpenTable.ie</a></li>
+            <li><a href="#">OpenTable.sg</a></li>
+            <li><a href="#">OpenTable.nl</a></li>
+            <li><a href="#">OpenTable.com.mx</a></li>
+            <li><a href="#">OpenTable.co.uk</a></li>
+
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col-lg-3">
+        <div class="widget">
+          <h3>Businesses</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Delight more diners</a></li>
+            <li><a href="#">Open for Business Blog</a></li>
+
+          </ul>
+          <h3>Join Us On</h3>
+          <ul class="list-unstyled social">
+            <li><a href="#"><img src="img/instagram-footer.png"></a></li>
+            <li><a href="#"><img src="img/twitter-footer.png"></a></li>
+            <li><a href="#"><img src="img/face-footer.png"></a></li>
+            <li><a href="#"><img src="img/in-footer.png"></a></li>
+
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+
+    </div> <!-- /.row -->
+
+
+
+    <div class="row">
+
+      <div class="col">
+        <div class="widget">
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col">
+        <div class="widget">
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Terms of Use</a></li>
+                    </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+
+      <div class="col">
+        <div class="widget">
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Cookies and Interest-Based Ads</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col">
+        <div class="widget">
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Do Not Sells</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col">
+        <div class="widget">
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Cookies Settings</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col">
+        <div class="widget">
+        <ul class="list-unstyled float-left links">
+       <li> <a class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. </a></li>
+        </ul>
+      </div>
+</div>
+    </div> <!-- /.row -->
+
+    <div class="row">
+
+      <div class="col-lg-10">
+        <div class="widget">
+        <p class="fo">OpenTable is part of Booking Holdings, the world <br>leader in online travel and related services.</p>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col-lg-2">
+        <div class="widget">
+          <div>
+            <a class="navbar-brand" href="#">
+                <img src="img/pay.png" />
+              </a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /.row -->
+
+
+  </div> <!-- /.site-footer -->
+  </div>
+<!--=========Start Footer======-->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap-timepicker.min.js"></script>
+
+<script src="js/extention/flatpickr.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/tpicker.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="js/script.js"></script>
+<script>
+  flatpickr(".datepicker",
+  {});
+
+</script>
+
+<script>
+  $(function() {
+    $('#datetimepicker1').datetimepicker();
+  });
+  </script>
+    <script type = "text/javascript">
+      $(function () {
+          $('#timepicker').datetimepicker({
+              format: 'LT'
+          });
+      });
+   </script>
+    </body>
+</html>

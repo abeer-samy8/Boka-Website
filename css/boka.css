@@ -1,0 +1,999 @@
+
+ /*=========== Start Navbar============*/
+ .navbar{
+
+
+ }
+
+ .navbar .navbar-nav .nav-link{
+  
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #17505C;
+
+ }
+
+ .navbar .navbar-nav .nav-link.active,
+ .navbar .navbar-nav .nav-link:focus,
+ .navbar .navbar-nav .nav-link:hover{
+    color: #FF914D;
+    
+ }
+ /*=========== End Navbar============*/
+
+ /*=========== Start Logo Navbar============*/
+
+ .logo-nav .main-btn{
+ width: 90px;
+    height:40px;
+    background-color: #FF914D;
+    border-radius: 8px;
+    border-color: #FF914D;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+
+} 
+ .logo-nav .main-btn:hover {
+    background: white;
+    color: #FF914D;
+
+} 
+
+.logo-nav .min-btn{
+    width: 90px;
+    height:40px;
+    border-color: #FF914D;
+    color:#FF914D ;
+    border-radius: 8px;
+    background-color: #fafafa;
+    margin-right: 30px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+
+      }
+      
+ .logo-nav .min-btn:hover {
+        background: #FF914D;
+        color: white;
+      }
+
+ /*=========== End Logo Navbar============*/
+
+/*============== Start Hero ==============*/
+   .hero{
+    height: 550px;
+    }
+   
+   .hero h4{
+    /* height: 22px; */
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    }
+   
+   .hero h1{
+   font-family: 'Avenir Next';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 140%;
+   text-align: center;
+   color: #FFFFFF;
+   
+   }
+    
+   /* Start Seach bar */
+   .hero  input{
+    width: 288px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    }
+   
+    .hero  button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100px;
+    height: 60px;
+    right: 0px;
+    top: calc(50% - 60px/2);
+    background: #FF914D;
+    border-radius: 8px;
+    }
+   
+    .hero  .btntxt{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+       }
+    /* End Seach bar */
+
+    .hero p{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    }
+   
+     /*start filter Bar*/
+     .hero .filter-container{
+    width: 504px;
+    /* height: 60px; */
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    }
+
+    .filter-container .check-in{
+    left: 8.33%;
+    right: 8.33%;
+    top: 8.33%;
+    bottom: 8.33%;
+    background: #FF914D;
+    width: 20px;
+    height: 20px;
+    }
+     
+    .filter-container .check-txt{
+     width: 56px;
+   height: 20px;
+   font-family: 'Avenir Next';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 140%;
+   color: #02323D;
+    }
+   
+    .filter-container .placeholdertxt{
+     
+     height: 60px;
+     width: 30px;
+     border-radius: 0;
+     border: 0;
+     display: block;
+     width: 100%;
+     font-size: 16px;
+     color: #02323D;
+     font-weight: 400;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    }
+   
+    
+   .filter-container i {
+     color:#02323D;
+     width: 14px;
+     height: 14px;
+   }
+   
+    
+     /*end filter Bar*/
+   
+           
+/*=========== End Hero==========*/
+
+
+/* ============ Start Services Area============  */
+
+.testimonial-section {
+    padding: 100px 0; }
+  
+  .testimonial-slider-wrap {
+    position: relative; }
+
+    .services{
+      padding: 100px 0;
+    }
+   
+    .services .service-box{
+    text-align: center;
+    /* padding: 0 4px; */
+    }
+    
+   
+  .services h3{
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #02323D;
+  
+    }        
+          
+/* ============ End Services Area============  */
+
+
+.two-section{
+  height: 900px;
+  background: #FFFAF8;
+  }
+/* ============ Start Ads Area============  */
+
+.ads{
+  box-sizing: border-box;
+  width: 1100px;
+  height: 280px;
+  background: #FFE9DB;
+  border-radius: 16px;
+    }
+
+    .ads .img{
+      
+      margin-top: 8px;
+      margin-left: 40px;
+
+      }
+
+    .ads .img1{
+     margin-top: 40px; 
+    width: 103.52px;
+    height: 129.26px;
+    left: 147.36px;
+    top: 23px;       
+        }
+
+        
+    .ads .img2{
+      margin-top: 120px; 
+margin-left: 10px;
+        width: 126.17px;
+        height: 160.14px;
+        left: 30px;
+        top: 119.68px;
+        
+            
+        }
+
+    .ads .img3{
+    width: 198.23px;
+    height: 299.95px;
+    left: 1229.23px;
+    top: 7.1px;
+
+            }
+
+    .ads .section-title{
+    text-align: center;
+    width: 500px;
+    height: 40px; 
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #02323D;
+    margin-top: 100px;
+            }
+
+    .ads p{
+    width: 423px;
+    height: 25px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #17505C;
+                
+                }
+
+                
+/* ============ End Ads Area============  */
+
+
+
+/* ============ Start Cards  Area============  */
+.card-section h1{
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+color: #02323D;
+}
+.card-section .viewall-txt{
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FF914D;
+  text-decoration: none;
+  margin-left: 10px;
+  
+  
+   }
+
+.card-section #card-nav > span {
+cursor: pointer;
+width: 58px;
+line-height: 58px;
+color: #17505C;;
+
+ }
+    
+.card-section  #card-nav .prev {
+margin-left: 10px;
+padding-left: 10px; }
+.card-section  #card-nav .next {
+padding-left: 20px;
+    }
+
+
+.card-section .card-title{
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+color: #02323D;
+padding-top: 5px;
+}
+
+.card-section .checked {
+  color: #FF914D;
+}
+
+.card-section .card-text{
+ 
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #17505C;
+    
+    
+}
+
+.card-section .card1text{
+ 
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 140%;
+color: #02323D;
+}
+
+.card-section .card-redio-btn{
+
+background: rgba(237, 243, 244, 0.8);  border-radius: 8px;
+border-radius: 8px;
+}
+
+.btn-check:checked+.card-redio-btn {
+  background: #FF914D;
+  color: #000000;
+
+}
+ 
+.card-section .card-redio-text1{
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+color: #17505C;
+}
+
+.card-section .card-redio-text2{
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+color: #17505C;
+  }
+
+
+.card-footer-text{
+height: 19px;
+left: 5.33%;
+right: 62%;
+top: 390px;
+font-family: 'Avenir Next';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;  
+color: #17505C;
+}  
+.card-footer-price{
+width: 57px;
+height: 25px;
+right: 40px;
+top: 360px;
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px; 
+text-decoration-line: line-through;
+color: #17505C;
+opacity: 0.9;
+}
+  
+  .card-footer-price2{
+  right: 45px;
+  top: 383px;
+  width: 64px;
+  height: 25px;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #02323D;
+  }
+  
+  
+  
+  .dis-present{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  
+  width: 34px;
+  height: 20px;
+  right: 15px;
+  top: 383px;
+  
+  /* Red */
+  
+  background: #EB5757;
+  border-radius: 4px;
+  
+  
+  }
+ 
+  .redio-btn-text-card{
+    width: 99px;
+  height: 19px;
+  
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #02323D;
+  }
+
+  .card-section .redio-btn2{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 8px;
+  gap: 10px;
+  width: 255px;
+  height: 34px;
+  left: 0px;
+  top: 148px;
+  background: rgba(237, 243, 244, 0.8);
+  border-radius: 8px;
+  }
+
+  .redio-btn-text-card.redio-btn2.active {
+    background: #FF914D;
+    color: #000000;
+  
+  }
+  
+
+  .redio-btns{
+    width: 255px;
+  height: 32px;
+  background: rgba(237, 243, 244, 0.8);
+  border-radius: 8px;
+  
+  
+  }
+
+/* ============End Cards  Area============  */
+
+/*=============Start Transfromation=============== */
+.tranfromation{
+  height: 550px;
+  background: #FFFAF8;
+}
+
+.tranfromation .min-btn{
+   border-color: #FF914D;
+   color:#FF914D ;
+   border-radius: 8px;
+   background-color: #fafafa;
+   margin-right: 30px;
+
+  }
+     
+.tranfromation .min-btn:hover {
+       background: #FF914D;
+       color: white;
+     }
+
+     .tranfromation .img{
+
+      width: 250px;
+     height: 280px;
+     left: 156px;
+     top: 170px
+     }
+
+     .tranfromation p{
+      width: 297px;
+      height: 125px;
+      left: 1146px;
+      top: 252px;
+      margin-left: 140px;
+      margin-top: 30px;
+      font-family: 'Avenir Next';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 140%;
+      color: #17505C;
+      
+      }
+
+
+      .tranfromation .author .pic {
+        width: 45px;
+        height: 45px;
+        margin-left: 140px;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.04));
+
+        
+      }
+      
+
+      .tranfromation .trantxt{
+
+        font-family: 'Avenir Next';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: capitalize;
+        color: #FF914D;
+        margin-left: 140px;
+
+
+      }
+
+/*=============End Transfromation=============== */
+
+ /* =========Start Popular Category======== */
+
+.category{
+  margin-top:7% !important;
+ 
+}
+
+.category .h1-category{
+  /* width: 1093px; */
+height: 49px;
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+
+/* b1 */
+
+color: #02323D;
+
+}
+
+.category .cat-txt{
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+color: #FF914D;
+text-decoration: none;
+
+
+
+ }
+
+ 
+ .category .cat-txt:hover{
+    color: #02323D;
+   
+
+}
+/* 
+---------------------------------------------
+banner
+--------------------------------------------- 
+*/
+
+.main-banner {
+  border-bottom: 3px dotted #eee;
+  /* padding-top: 160px; */
+  padding-bottom: 30px;
+}
+
+.main-banner .left-content .thumb img {
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.main-banner .left-content .inner-content {
+ 
+
+position: absolute;
+width: 113px;
+height: 36px;
+margin-top: 220px;
+margin-left: 50px;
+
+font-family: 'ITF Devanagari Marathi';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+
+.main-banner .left-content .inner-content h4 {
+  
+
+
+width: 117px;
+height: 36px;
+left: 1165px;
+top: 4458px;
+font-family: 'ITF Devanagari Marathi';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+  
+}
+
+.main-banner .left-content .inner-content span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.main-banner .right-content .right-first-image {
+  margin-bottom: 28.5px;
+}
+
+.main-banner .right-content .right-first-image .thumb {
+  position: relative;
+  text-align: center;
+}
+
+.main-banner .right-content .right-first-image .thumb img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-right: 130px;
+  font-family: 'ITF Devanagari Marathi';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+
+}
+
+.main-banner .right-content .right-first-image .thumb .inner-content span {
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
+  text-align: center;
+  background-color: rgba(42,42,42,.97);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.main-banner .right-content .right-first-image .thumb:hover .hover-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.main-banner .right-content .right-first-image .thumb .hover-content p {
+  color: #fff;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+
+.site-section .section-title{
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+
+color: #02323D;
+
+}
+ /* =========End Popular Category======== */
+
+
+
+ /* ==========Start Customer Says======== */
+
+.testimonial .author .pic {
+  width: 45px;
+  height: 45px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.04));
+  
+}
+
+.testimonial blockquote p {
+  width: 260px;
+/* height: 150px; */
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+color: #17505C;
+
+}
+
+.testimonial .client-name {
+  font-family: "Marcellus", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #116530; }
+
+
+
+
+  .text-warning {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important; }
+
+
+    .customer-name{
+      width: 158px;
+height: 25px;
+
+font-family: 'Avenir Next';
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+text-align: right;
+color: #17505C;
+
+    }
+
+    .customer-name-up{
+      width: 124px;
+height: 22px;
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+
+/* b1 */
+
+color: #02323D;
+
+    }
+    .customer-name-down{
+      width: 122px;
+height: 19px;
+
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+
+color: #6B7C80;
+    }
+    .checked {
+      color: #FF914D;
+    }
+ /* ==========End Customer Says======== */
+
+
+/* =======Start Clients Section ======= */
+.client {
+  text-align: center; 
+  height: 185px;
+  background: #E3ECEE;}
+ 
+/* =======End Clients Section ======= */
+
+
+
+/*=============Start Footer Area=========*/  
+.site-footer { 
+padding: 70px 0;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+background: #F9F9F9;
+
+}
+.site-footer a {
+color: #f17945;
+position: relative;
+display: inline-block; }
+
+.site-footer .btn:before {
+display: none; }
+
+.site-footer .widget {
+margin-bottom: 40px;
+display: block;
+position: relative;
+z-index: 1; }
+
+.site-footer .widget h3, .site-footer .widget .h3 {
+margin-bottom: 10px;
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+color: #02323D;
+}
+
+.site-footer .widget .links {
+width: 150px; }
+
+.site-footer .widget .links li {
+margin-bottom: 10px; }
+
+
+.site-footer .widget .links li a {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6B7C80;
+  text-decoration: none;
+}
+
+.site-footer .fo{
+  left: 9.75%;
+right: 64.69%;
+top: 87.83%;
+bottom: 4.93%;
+font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #6B7C80;
+}
+
+
+.site-footer .social li {
+display: inline-block; }
+
+.site-footer .social li a {
+display: inline-block;
+width: 30px;
+height: 30px;
+position: relative;
+background: #FFFFFF;
+border-radius: 50%;
+color: #fff; }
+
+.site-footer .social li a:before {
+display: none; }
+
+.site-footer .social li a > img {
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%); }
+
+.site-footer .social li a:hover {        
+background: #f59b74;
+color: #fff; }
+  /*==========End Footer Area========== */  
+
+
+  
